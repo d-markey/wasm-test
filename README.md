@@ -42,7 +42,7 @@ Open up a browser to http://localhost:8181/ and see the results:
 [INFO] Done
 ```
 
-JavaScript and Web Assembly do not handle `int` and `double` the same way, and this is somewhat documented.
+JavaScript and Web Assembly do not handle `int` and `double` the same way, and this is somewhat documented (eg. https://github.com/dart-lang/sdk/issues/55203).
 
 Maps and lists loose their strong types on the way, which is also expected. However, it is surprising that `<int, double>{}` and `<bool, bool>{}` are received as `<Object?, Object?>{}` (OK) with `double` or `bool` values (OK also), yet `String` or `JSString` keys.
 
